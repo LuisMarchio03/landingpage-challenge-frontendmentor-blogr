@@ -1,0 +1,129 @@
+header {
+  width: 100%;
+  height: 600px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  background: rgb(255,143,112);
+  background: linear-gradient(131deg, rgba(255,143,112,1) 0%, rgba(255,61,84,1) 100%);
+
+  border-bottom-left-radius: 70px;
+
+  padding: 4% 8%;
+}
+
+header .logo-nav {
+  display: flex;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+}
+
+header .li-container {
+  margin: 0.8rem 1rem;
+}
+
+header .invisible {
+  display: none;
+}
+
+header .logo {
+  margin-right: 3rem;
+}
+
+header li {
+  color: hsl(0, 0%, 100%);
+
+  font: 700 1.1rem Ubuntu, sans-serif;
+
+  cursor: pointer;
+}
+
+header .buttons button:first-child {
+  color: hsl(0, 0%, 100%);
+
+  font: 700 1.1rem Ubuntu, sans-serif;
+
+  cursor: pointer;
+
+  background: transparent;
+  border: 0;
+
+  margin-right: 2rem;
+}
+
+header .buttons button:last-child {
+  width: 150px;
+  height: 45px;
+
+  color: hsl(356, 100%, 66%);
+
+  font: 700 1.1rem Ubuntu, sans-serif;
+
+  cursor: pointer;
+
+  background: hsl(0, 0%, 100%);
+  border: 0;
+  border-radius: 30px;
+
+  margin-right: 2rem;
+}
+
+header section.welcome {
+  width: 100%;
+}
+
+header .welcome {
+  text-align: center;
+}
+
+.welcome h1 {
+  color: hsl(0, 0%, 100%);
+  font: 700 3rem Ubuntu, sans-serif;
+  margin-bottom: 2rem;
+}
+
+.welcome span {
+  color: hsl(0, 0%, 100%);
+  font: 400 1rem Ubuntu, sans-serif;
+}
+
+.welcome .buttons-welcome {
+  margin-top: 3rem;
+}
+
+.buttons-welcome button:first-child {
+  width: 150px;
+  height: 45px;
+
+  color: hsl(356, 100%, 66%);
+
+  font: 700 1.1rem Ubuntu, sans-serif;
+
+  cursor: pointer;
+
+  background: hsl(0, 0%, 100%);
+  border: 0;
+  border-radius: 30px;
+}
+
+.buttons-welcome button:last-child {
+  width: 150px;
+  height: 45px;
+
+  color: hsl(0, 0%, 100%);
+
+  font: 700 1.1rem Ubuntu, sans-serif;
+
+  cursor: pointer;
+
+  background: transparent;
+  border: 2px solid #ccc;
+  border-radius: 30px;
+
+  margin: 0 1rem;
+}

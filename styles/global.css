@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+*, button, a, input, textarea {
+  font: 300 1rem Overpass, sans-serif;
+}
+
+a {
+  color: hsl(228, 45%, 44%); 
+}
+
+button {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: hsl(208, 49%, 24%);
+}
+
+p, span, quote, strong {
+  color: hsl(207, 13%, 34%);
+}
