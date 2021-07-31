@@ -127,3 +127,44 @@ header .welcome {
 
   margin: 0 1rem;
 }
+
+.designed-future {
+  overflow: hidden;
+}
+
+.designed-future h2 {
+  text-align: center;
+
+  color: hsl(208, 49%, 24%);
+  font: 500 2rem Ubuntu, sans-serif;
+  margin-top: 6rem;
+}
+
+.designed-future .flex {
+  display: flex;
+}
+
+.designed-future img {
+  max-width: 100%;
+  width: 40rem;
+  margin-top: -1rem;
+}
+
+.designed-future .texting {
+  margin: 5rem 6rem;
+  width: 70%;
+}
+
+.designed-future .texting h3 {
+  color: hsl(208, 49%, 24%);
+  font: 500 1.5rem Ubuntu, sans-serif;
+
+  margin: 2rem 0;
+}
+
+.designed-future .texting p {
+  line-height: 32px;
+  color: hsl(207, 13%, 34%);
+
+  font-family: Overpass, sans-serif;
+}
