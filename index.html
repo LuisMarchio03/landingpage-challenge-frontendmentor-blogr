@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
@@ -28,10 +28,10 @@
         <img src="./images/logo.svg" alt="Blogr">
       </div>
   
-      <nav>
+      <nav class="desktop">
         <ul>
           <div class="li-container">
-            <li>Product</li>
+            <li id="product-li">Product <img src="./images/icon-arrow-light.svg" alt="arrow"></li>
             <div id="product" class="dropdown invisible">
               <li><a href="">Overview</a></li>
               <li><a href="">Pricing</a></li>
@@ -42,8 +42,8 @@
           </div>
   
           <div class="li-container">
-            <li>Company</li>
-            <div id="product" class="dropdown invisible">
+            <li id="company-li">Company <img src="./images/icon-arrow-light.svg" alt="arrow"></li>
+            <div id="company" class="dropdown invisible">
               <li><a href="">About</a></li>
               <li><a href="">Team</a></li>
               <li><a href="">Blog</a></li>
@@ -52,8 +52,8 @@
           </div>
   
           <div class="li-container">
-            <li>Connect</li>
-            <div id="product" class="dropdown invisible">
+            <li id="connect-li">Connect <img src="./images/icon-arrow-light.svg" alt="arrow"></li>
+            <div id="connect" class="dropdown invisible">
               <li><a href="">Contact</a></li>
               <li><a href="">Newsletter</a></li>
               <li><a href="">LinkedIn</a></li>
@@ -62,8 +62,56 @@
         </ul>
       </nav>
     </div>
+
+    <nav class="mobile">
+      <img id="icon-menu" src="./images/icon-hamburger.svg" alt="menu">
+      <img id="icon-menu-close" class="invisible" src="./images/icon-close.svg" alt="menu">
+
+      <ul id="menu-ul">
+        <div class="ul">
+          <div>
+            <div>
+              <li id="li-product-mobile">Product <img src="./images/icon-arrow-dark.svg" alt="arrow"></li>
+              <div id="product-mobile" class="dropdown invisible">
+                <li><a href="">Overview</a></li>
+                <li><a href="">Pricing</a></li>
+                <li><a href="">Marketplace</a></li>
+                <li><a href="">Features</a></li>
+                <li><a href="">Integrations</a></li>
+              </div>
+            </div>
+
+            <div>
+              <li id="li-company-mobile">Company <img src="./images/icon-arrow-dark.svg" alt="arrow"></li>
+              <div id="company-mobile" class="dropdown invisible">
+                <li><a href="">About</a></li>
+                <li><a href="">Team</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Careers</a></li>
+              </div>
+            </div>
+
+            <div>
+              <li id="li-connect-mobile">Connect <img src="./images/icon-arrow-dark.svg" alt="arrow"></li>
+              <div id="connect-mobile" class="dropdown invisible">
+                <li><a href="">Contact</a></li>
+                <li><a href="">Newsletter</a></li>
+                <li><a href="">LinkedIn</a></li>
+              </div>
+            </div>
+          </div>
+  
+          <span class="division"></span>
+  
+          <div class="buttons-mobile">
+            <button>Login</button>
+            <button>Sign Up</button>
+          </div>
+        </div>
+      </ul>
+    </nav>
     
-    <div class="buttons">
+    <div class="buttons desktop">
       <button>Login</button>
       <button>Sign Up</button>
     </div>
@@ -83,6 +131,8 @@
       <h2>Designed for the future</h2>
 
       <div class="flex">
+        <img class="invisible-img" src="./images/illustration-editor-mobile.svg" alt="">
+
         <div>
           <div class="texting">
             <h3>Introducing an extensible editor</h3>
@@ -103,46 +153,86 @@
         <img src="./images/illustration-editor-desktop.svg" alt="">
       </div>
     </section>
+
+    <section class="infrastructure">
+      <img src="./images/illustration-phones.svg" alt="llustration-phones">
+      <div>
+        <h2>State of the Art Infrastructure</h2>
+        <p>With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+          This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
+      </div>
+    </section>
+
+    <section class="tools">
+      <div class="desktop">
+        <img src="./images/illustration-laptop-desktop.svg" alt="">
+      </div>
+      <div class="mobile">
+        <img src="./images/illustration-laptop-mobile.svg" alt="">
+      </div>
+      <div class="texting-container">
+        <div class="texting">
+          <h3>Free, open, simple</h3>
+          <p>Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+            features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+            and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
+        </div>
+
+        <div class="texting">
+          <h3>Powerful tooling</h3>
+          <p>Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+            capable of producing even the most complicated sites.</p>
+        </div>
+      </div>
+    </section>
   </main>
 
-  
-  State of the Art Infrastructure
-  With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
-  This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+  <footer>
+    <div class="logo">
+      <img src="./images/logo.svg" alt="Blogr">
+    </div>
 
-  Free, open, simple
-  Blogr is a free and open source application backed by a large community of helpful developers. It supports 
-  features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
-  and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+    <nav>
+      <ul>
+        <div class="li-container">
+          <li>Product</li>
+          <div>
+            <li><a href="">Overview</a></li>
+            <li><a href="">Pricing</a></li>
+            <li><a href="">Marketplace</a></li>
+            <li><a href="">Features</a></li>
+            <li><a href="">Integrations</a></li>
+          </div>
+        </div>
 
-  Powerful tooling
-  Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
-  capable of producing even the most complicated sites.
+        <div class="li-container">
+          <li>Company</li>
+          <div>
+            <li><a href="">About</a></li>
+            <li><a href="">Team</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Careers</a></li>
+          </div>
+        </div>
 
-  Product
-
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
-
-  Company
-
-  About
-  Team
-  Blog
-  Careers
-
-  Connect
-  
-  Contact
-  Newsletter
-  LinkedIn
+        <div class="li-container">
+          <li>Connect</li>
+          <div>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Newsletter</a></li>
+            <li><a href="">LinkedIn</a></li>
+          </div>
+        </div>
+      </ul>
+    </nav>
+  </footer>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Luís Gabriel Marchió Batista</a>.
   </div>
+
+  <script src="./js/menuMobile.js"></script>
+  <script src="./js/dropdown.js"></script>
 </body>
 </html>

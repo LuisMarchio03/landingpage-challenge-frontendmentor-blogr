@@ -14,6 +14,162 @@ header {
   padding: 4% 8%;
 }
 
+header .dropdown {
+  padding: 1rem;
+  margin-top: 1rem;
+  border: 1px solid hsl(240, 2%, 79%);
+}
+
+header .dropdown li {
+  margin: 0.6rem;
+}
+
+header .dropdown a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+
+  transition: 0.3s;
+}
+
+header .mobile .dropdown {
+  margin-top: 1rem;
+  background: hsl(0, 0%, 93%);
+
+  position: relative;
+  z-index: 9999;
+}
+
+header .mobile .dropdown li {
+  margin: 0.6rem;
+}
+
+header .mobile .dropdown li:first-child {
+  margin: 0.2rem;
+}
+
+header .mobile .dropdown a {
+  text-decoration: none;
+  color: hsl(208, 49%, 24%);
+
+  transition: 0.3s;
+}
+
+header .mobile .dropdown a:hover {
+  color: hsl(353, 100%, 62%);
+}
+
+header .dropdown a:hover {
+  color: hsl(208, 49%, 24%);
+}
+
+header .mobile {
+  display: none;
+}
+
+header .mobile {
+  margin-top: 10px;
+}
+
+header .mobile img {
+  width: 35px;
+  cursor: pointer;
+}
+
+header .mobile img.invisible {
+  display: none;
+}
+
+header .mobile ul {
+  display: none;
+
+}
+
+header .mobile .ul {
+  width: 70%;
+  min-height: 80%;
+  height: auto;
+
+  margin-top: 3rem;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  z-index: 999;
+  
+  background: hsl(0, 0%, 100%);
+  border: 1px solid hsl(240, 2%, 79%);
+  border-radius: 15px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .mobile .ul li {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: hsl(208, 49%, 24%);
+  margin-top: 2rem;
+
+  text-align: center;
+}
+
+header .mobile .ul li > img {
+  width: 12px;
+}
+
+header .mobile .division {
+  width: 80%;
+  border-bottom: 1px solid hsl(208, 49%, 24%);
+  margin: 2rem;
+}
+
+header .mobile .buttons-mobile {
+  margin-bottom: 2rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+header .buttons-mobile button {
+  margin: 0.8rem 0;
+}
+
+header .buttons-mobile button:first-child {
+  color: hsl(237, 17%, 21%);
+
+  font: 700 1.1rem Ubuntu, sans-serif;
+
+  cursor: pointer;
+
+  background: transparent;
+  border: 0;
+}
+
+header .buttons-mobile button:last-child {
+  width: 150px;
+  height: 45px;
+
+  color: hsl(0, 0%, 100%);
+
+  font: 700 1.1rem Ubuntu, sans-serif;
+
+  cursor: pointer;
+
+  background: rgb(255,143,112);
+  background: linear-gradient(131deg, rgba(255,143,112,1) 0%, rgba(255,61,84,1) 100%);
+  border: 0;
+  border-radius: 30px;
+}
+
+header .mobile ul li:first-child {
+  margin-top: 4rem;
+}
+
 header .logo-nav {
   display: flex;
 }
@@ -146,8 +302,14 @@ header .welcome {
 
 .designed-future img {
   max-width: 100%;
-  width: 40rem;
+  width: 40%;
   margin-top: -1rem;
+}
+
+.designed-future .invisible-img {
+  margin-top: 2rem;
+
+  display: none;
 }
 
 .designed-future .texting {
@@ -167,4 +329,305 @@ header .welcome {
   color: hsl(207, 13%, 34%);
 
   font-family: Overpass, sans-serif;
+}
+
+.infrastructure {
+  width: 100%;
+  height: 400px;
+
+  background: hsl(237, 23%, 32%);
+  background-image: url(../images/bg-pattern-circles.svg);
+  border-bottom-left-radius: 50px;
+
+  margin: 5rem 0;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.infrastructure img {
+  margin-left: 8rem;
+}
+
+.infrastructure > div {
+  width: 50%;
+  margin-right: 8rem;
+  margin-top: 3rem;
+}
+
+.infrastructure h2 {
+  color: hsl(0, 0%, 100%);
+  font: 500 1.5rem Ubuntu, sans-serif;
+
+  margin: 2rem 0;
+}
+
+.infrastructure p {
+  width: 70%;
+
+  line-height: 32px;
+  color: hsl(0, 0%, 100%);
+
+  font-family: Overpass, sans-serif;
+}
+
+section.tools {
+  display: flex;  
+}
+
+section.tools .mobile {
+  display: none;
+}
+
+.tools img {
+  margin-left: -18rem;
+}
+
+.tools .texting-container {
+  margin-top: 5rem;
+}
+
+.tools .texting {
+  margin: 5rem 6rem;
+  width: 70%;
+}
+
+.tools .texting h3 {
+  color: hsl(208, 49%, 24%);
+  font: 500 1.5rem Ubuntu, sans-serif;
+
+  margin: 2rem 0;
+}
+
+.tools .texting p {
+  line-height: 32px;
+  color: hsl(207, 13%, 34%);
+
+  font-family: Overpass, sans-serif;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  padding: 2%;
+
+  background-color: hsl(237, 17%, 21%);
+
+  display: flex;
+}
+
+footer nav {
+  width: 40%;
+}
+
+footer nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+footer .logo {
+  margin-right: 7rem;
+}
+
+footer .li-container {
+  margin: 0.8rem 1rem;
+}
+
+footer .li-container > li {
+  margin-bottom: 2rem;
+}
+
+footer li {
+  color: hsl(0, 0%, 100%);
+
+  font: 700 1.1rem Ubuntu, sans-serif;
+
+  cursor: pointer;
+
+  margin: 1rem 0;
+}
+
+footer li a {
+  font: 300 1rem 'Overpass';
+  color: hsl(240, 2%, 79%);
+  text-decoration: none;
+}
+
+/* Media Query */
+
+@media (max-width: 1250px) {
+  .designed-future img {
+    max-width: 100%;
+    width: auto;
+    height: 600px;
+    margin-top: -1rem;
+  }
+
+  .tools .texting {
+    margin: 8rem 0;
+    width: 80%;
+  }
+}
+
+@media (max-width: 1100px) {
+  
+  .infrastructure {
+    margin: 3em 0;
+
+    height: auto;
+  
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+  }
+  
+  .infrastructure img {
+    width: 40%;
+    margin-left: 0;
+    margin-top: -5rem;
+  }
+  
+  .infrastructure > div {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 3rem;
+    margin-top: 0.8rem;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+  }
+
+  .infrastructure h2 {
+    margin: 1.3rem;
+  }
+
+  .designed-future .flex {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    text-align: center;
+  }
+
+  .designed-future img {
+    display: none;
+      max-width: 100%;
+      width: 40%;
+      height: auto;
+  }
+
+  .designed-future .invisible-img {
+    width: 60%;
+
+    display: block;
+  }
+  
+  .designed-future .texting {
+    margin: 3rem 0;
+    width: 100%;
+  }
+
+  section.tools {
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+
+    margin: 1rem;
+  }
+
+  section.tools .texting-container {
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+    margin: 0;
+  }
+  
+  section.tools .mobile {
+    display: none;
+  }
+
+  section.tools .desktop {
+    display: none;
+  }
+
+  section.tools .mobile {
+    display: block;
+  }
+  
+  .tools img {
+    margin-left: 0;
+  }
+  
+  .tools .texting {
+    margin: 1rem 0;
+    width: 70%;
+  }
+}
+
+@media (max-width: 980px) {
+
+  header .desktop {
+    display: none;
+  }
+
+  header .mobile {
+    display: block;
+  }
+
+  header .welcome h1 {
+    font: 700 2rem Ubuntu, sans-serif;
+  }
+  
+
+  footer {
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+  }
+  
+  footer nav {
+    width: 100%;
+  }
+  
+  footer nav ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    list-style: none;
+  }
+
+  footer .logo {
+    margin-right: 0;
+    margin-bottom: 2.5rem;
+    margin-top: 2rem;
+  }
+  
+  footer .li-container {
+    margin: 0.8rem 1rem;
+  }
+  
+  footer .li-container > li {
+    margin-bottom: 2rem;
+  }
+  
+}
+
+@media (max-width: 600px) {
+  .infrastructure h2 {
+    margin: 0.5rem;
+  }
+
+  .tools .texting {
+    width: 100%;
+  }
 }
